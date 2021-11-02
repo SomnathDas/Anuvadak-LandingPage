@@ -1,0 +1,86 @@
+.navbar_container {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background-color: whitesmoke;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navbar_list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.navbar_container a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.navbar_container a:hover,
+.navbar_container a:focus {
+  color: rgba(0, 0, 0, 0.527);
+}
+
+.navbar_container .closeBtn {
+  position: relative;
+  font-size: 60px;
+}
+
+.initialNav {
+  padding: 2rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  z-index: 999;
+  position: fixed;
+  background-color: transparent;
+}
+
+.finalNavHead {
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.openBtn {
+  margin-left: auto;
+}
+
+.closeBtn {
+  margin-left: auto;
+}
+
+@media screen and (max-height: 450px) {
+  .navbar_container {
+    font-size: 20px;
+  }
+  .navbar_container .closeBtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .logo {
+    display: none;
+  }
+}
