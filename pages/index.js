@@ -13,6 +13,7 @@ export default function Home() {
           name="description"
           content="Experience the web, in your native language."
         />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <header>
