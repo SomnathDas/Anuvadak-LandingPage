@@ -9,11 +9,11 @@ const LogoText = "| Anuवादak |";
 
 const Navbar = () => {
   const closeNavBar = () => {
-    document.getElementById("nav-bar").style.height = "0%";
+    document.getElementById("nav-bar").style.width = "0%";
     document.getElementsByTagName("body")[0].style.overflow = "scroll";
   };
   const openNavBar = () => {
-    document.getElementById("nav-bar").style.height = "100%";
+    document.getElementById("nav-bar").style.width = "100%";
     document.getElementsByTagName("body")[0].style.overflow = "hidden";
     document.getElementById("finalNavHeadLogo").style.color = "#40C9A2";
   };
@@ -35,6 +35,7 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className={styles.openBtn}
           size="2.2rem"
+          style={{ cursor: "pointer" }}
         />
       </div>
 
@@ -62,6 +63,7 @@ const NavbarList = ({ closeNavBarHandler, setIsOpenHandler }) => {
           onClick={() => setIsOpenHandler(false)}
           size="2.2rem"
           color="white"
+          style={{ cursor: "pointer" }}
         />
       </div>
 
@@ -69,7 +71,7 @@ const NavbarList = ({ closeNavBarHandler, setIsOpenHandler }) => {
         {navbarList.length !== 0
           ? navbarList.map((elem) => (
               <Link href={elem.path}>
-                <li key={elem.name}>
+                <li key={elem.key}>
                   <a
                     onClick={() => {
                       closeNavBarHandler();
@@ -88,15 +90,22 @@ const NavbarList = ({ closeNavBarHandler, setIsOpenHandler }) => {
 };
 
 const navbarList = [
-  { name: "Home", path: "/#hero", icon: <RiHome3Line size="2.2rem" /> },
+  {
+    name: "Home",
+    path: "/#hero",
+    icon: <RiHome3Line size="2.2rem" />,
+    key: 2451,
+  },
   {
     name: "Features",
     path: "/#features",
     icon: <MdOutlineFeaturedPlayList size="2.2rem" />,
+    key: 1278,
   },
   {
     name: "Download",
     path: "/#download",
     icon: <RiFolderDownloadLine size="2.2rem" />,
+    key: 8745,
   },
 ];
