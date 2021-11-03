@@ -51,7 +51,7 @@ export default function Home() {
           id="download"
         >
           <h1>Download Now</h1>
-          <button className={styles.downloadBtn}>Firefox Extention</button>
+          <button className={styles.downloadBtn}>Firefox Extension</button>
         </section>
       </main>
     </div>
