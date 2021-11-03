@@ -13,7 +13,8 @@
 
 @media screen and (min-width: 550px) {
   .card_container {
-    border: 1px solid black;
+    box-shadow: rgba(42, 223, 168, 0.596) 0px 1px 3px,
+      rgba(14, 169, 216, 0.678) 0px 1px 2px;
   }
   .icons {
     size: 2rem;
