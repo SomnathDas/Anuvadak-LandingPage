@@ -1,6 +1,6 @@
 .navbar_container {
-  height: 0%;
-  width: 100%;
+  height: 100%;
+  width: 0%;
   position: fixed;
   z-index: 999;
   left: 0;
@@ -31,6 +31,10 @@
   color: #000000;
   display: block;
   transition: 0.3s;
+}
+
+.navbar_container a {
+  cursor: pointer;
 }
 
 .navbar_container a:hover,
