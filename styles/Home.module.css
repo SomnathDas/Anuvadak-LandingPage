@@ -43,16 +43,6 @@
   border-radius: 2px;
 }
 
-.downloadBtn:hover {
-  filter: grayscale(0%) opacity(1) hue-rotate(0);
-  animation-name: inversion-alpha;
-  animation-name: inversion-alpha;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-}
-
 @keyframes inversion-alpha {
   from {
     filter: hue-rotate(0deg) invert(0);
@@ -66,5 +56,21 @@
   .features_section {
     flex-direction: row;
     gap: 2rem;
+  }
+  .downloadBtn:hover {
+    filter: grayscale(0%) opacity(1) hue-rotate(0);
+    animation-name: inversion-alpha;
+    animation-name: inversion-alpha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
+}
+@media screen and (max-width: 550px) {
+  .downloadBtn:active {
+    color: black;
+    background-color: white;
+    transition: ease-in-out;
   }
 }
