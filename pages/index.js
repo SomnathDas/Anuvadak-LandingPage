@@ -13,8 +13,9 @@ export default function Home() {
           name="description"
           content="Experience the web, in your native language."
         />
-        <link rel="apple-touch-icon" href="/icon-192.png" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
       </Head>
       <header>
         <Navbar />
@@ -50,7 +51,7 @@ export default function Home() {
           id="download"
         >
           <h1>Download Now</h1>
-          <button className={styles.downloadBtn}>Firefox Extension</button>
+          <button className={styles.downloadBtn}>Firefox Extention</button>
         </section>
       </main>
     </div>
